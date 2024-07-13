@@ -5,7 +5,7 @@ import Player from "./pages/Player/Player"
 import { onAuthStateChanged } from "firebase/auth"
 import { useEffect } from "react"
 import { auth } from "./firebase"
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -32,7 +32,6 @@ const navigate= useNavigate();
         <Route path="/login" element={<Login/>}/>
         <Route path="/player/:id" element={ <Player/>}/>
       </Routes>
-     
     </div>
 
     
